@@ -9,7 +9,50 @@
 </head>
 
 <script defer>
-
+    document.addEventListener('keydown', (e) => {
+        switch (e.key) {
+            case '1':
+                document.querySelector('.changing_text img').src = ''
+                document.querySelector('.changing_text p').innerText = ''
+                return;
+            case '2':
+                document.querySelector('.changing_text img').src = ''
+                document.querySelector('.changing_text p').innerText = ''
+                return;
+            case '3':
+                document.querySelector('.changing_text img').src = ''
+                document.querySelector('.changing_text p').innerText = ''
+                return;
+            case '4':
+                document.querySelector('.changing_text img').src = ''
+                document.querySelector('.changing_text p').innerText = ''
+                return;
+            case '5':
+                document.querySelector('.changing_text img').src = ''
+                document.querySelector('.changing_text p').innerText = ''
+                return;
+            case '6':
+                document.querySelector('.changing_text img').src = ''
+                document.querySelector('.changing_text p').innerText = ''
+                return;
+            case '7':
+                document.querySelector('.changing_text img').src = ''
+                document.querySelector('.changing_text p').innerText = ''
+                return;
+            case '8':
+                document.querySelector('.changing_text img').src = ''
+                document.querySelector('.changing_text p').innerText = 'Gymnasium Riedberg'
+                return;
+            case '9':
+                document.querySelector('.changing_text img').src = 'qr.png'
+                document.querySelector('.changing_text p').innerText = 'fragen.akpolitischebildung.grb@gmail.com'
+                return;
+            case '0':
+                document.querySelector('.changing_text img').src = ''
+                document.querySelector('.changing_text p').innerText = ''
+                return;
+        }
+    })
 </script>
 
 <style>
@@ -42,7 +85,7 @@
         min-height: 40px;
     }
 
-    header div {
+    header .changing_text {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -60,9 +103,9 @@
 <body>
     <header>
         <img src="logo.png">
-        <div>
-            <img src="qr.png">
-            <p>fragen.akpolitischebildung.grb@gmail.com</p>
+        <div class="changing_text">
+            <img src="">
+            <p></p>
         </div>
         <img src="logo.png">
     </header>
